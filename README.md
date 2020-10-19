@@ -1,5 +1,2 @@
 # PSI_Projekt
-TEST HELLO
-SIEMA MARCIN
-<3 
-TEST NR3
+
