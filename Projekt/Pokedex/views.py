@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 # Create your views here.
-def home_view(*args, **kwargs):
-    return HttpResponse("<h1>Siema mordo</h1>")
+from django.http import HttpResponse
+
+def myView(request):
+    return HttpResponse('Hello, World!')
