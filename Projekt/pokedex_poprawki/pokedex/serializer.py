@@ -37,3 +37,9 @@ class WersjaGrySerializer(serializers.ModelSerializer):
     class Meta:
         model = WersjaGry
         fields = ['wersja_id', 'wersja_nazwa']
+
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['username']

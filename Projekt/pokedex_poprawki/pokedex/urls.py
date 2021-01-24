@@ -31,5 +31,7 @@ urlpatterns = \
         path('ruchy/<int:pk>', views.RuchyDetail.as_view(), name=views.RuchyList.name),
         path('statystyki', views.PodstawoweStatyListy.as_view(), name=views.PodstawoweStatyListy.name),
         path('statystyki/<int:pk>', views.PodstawoweStatyDetail.as_view(), name=views.PodstawoweStatyListy.name),
+        path('users/', views.UserList.as_view(), name=views.UserList.name),
+        path('users/<int:pk>/', views.UserDetail.as_view(), name=views.UserDetail.name),
         path('', views.ApiRoot.as_view(), name=views.ApiRoot.name)
     ]

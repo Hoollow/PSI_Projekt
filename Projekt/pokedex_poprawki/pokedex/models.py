@@ -21,7 +21,7 @@ class Pokemon(models.Model):
     pok_waga = models.IntegerField()
     pok_wzrost = models.IntegerField()
     plec = models.CharField(max_length=2, choices=GENDER_CHOICES, default=MALE)
-    trener = models.ForeignKey('Trener', on_delete=models.CASCADE)
+    trener = models.ForeignKey('Trener', on_delete=models.CASCADE, null=True) #null=True dla testów
     wersja_gry = models.ForeignKey('WersjaGry', on_delete=models.CASCADE)
     typ = models.ForeignKey('Typy', on_delete=models.CASCADE)
 
@@ -56,7 +56,7 @@ class Trener(models.Model):
 
 
 class Typy(models.Model):
-    typ_id = models.IntegerField()
+    typ_id = models.IntegerField(null=True) #dla testow dodano null
     typ_nazwa = models.CharField(max_length=45)
 
     def __str__(self):
